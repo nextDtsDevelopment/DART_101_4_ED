@@ -23,7 +23,7 @@ void main() {
   final suma3 = 1 + 1;
   print("El resultado de la suma es $suma3");
 
-  /// codigo dart ${1 + 1} -> operación 
+  /// codigo dart ${1 + 1} -> operación
   print("El resultado de la suma es ${1 + 1}");
 
   /// Operar el string
@@ -33,8 +33,7 @@ void main() {
   print(mensaje2.length); // 10
 
   print(mensaje2.substring(1)); //ola Mundo
-  print(mensaje2.substring(1,4)); // ola
+  print(mensaje2.substring(1, 4)); // ola
 
   print(mensaje2.split(""));
-
 }
