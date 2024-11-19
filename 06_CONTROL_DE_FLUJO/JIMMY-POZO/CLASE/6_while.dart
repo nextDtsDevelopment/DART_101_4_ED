@@ -20,17 +20,26 @@ void main() {
   ///imprimir "El valor es-> numero incremental"
   ///Ciclo while va ha terminar cuando se cumpla la condicion
 
-  print("Ingrese un numero");
+  //print("Ingrese un numero");
+  // final valorConsola = stdin.readLineSync();
+  // final numero = int.tryParse(valorConsola ?? '');
+  // int contador = 0;
+  // if (numero != null) {
+  //   //int i = numero;
+  //   while (contador <= numero) {
+  //     print("El valor es: $contador");
+  //     contador++;
+  //   }
+  // } else {
+  //   print("El valor: $valorConsola no es un numero");
+  // }
+
+  print("Ingrese un número para calcular su tabla de multiplicar:");
   final valorConsola = stdin.readLineSync();
-  final numero = int.tryParse(valorConsola ?? '');
+  final numero = int.tryParse(valorConsola ?? "") ?? 1;
   int contador = 0;
-  if (numero != null) {
-    //int i = numero;
-    while (contador <= numero) {
-      print("El valor es: $contador");
-      contador++;
-    }
-  } else {
-    print("El valor: $valorConsola no es un numero");
+  while (contador <= numero) {
+    print("$numero * $contador = ${numero * contador}");
+    contador++;
   }
 }
