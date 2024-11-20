@@ -7,6 +7,9 @@ void main() {
 
   print("ingrese la edad");
   final dataConsole2 = stdin.readLineSync();
+  //  ?? "" -> valida que si es nulo lo que tiene la variable tipo caracter
+  //           lo convierte a caracter
+  //  ?? 0  -> valida que la variable caracter/string si es nulo convierte a numero
   final edadAnimal = int.tryParse(dataConsole2 ?? "") ?? 0;
 
   print("Ingrese la raza");
